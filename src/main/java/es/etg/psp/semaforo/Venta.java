@@ -9,7 +9,7 @@ public class Venta {
     private final Semaphore semaforoProduccion = new Semaphore(1);
     private final Semaphore semaforoVenta = new Semaphore(0);
 
-    private final String MSG_PRODUCIR = "Producdo ";
+    private final String MSG_PRODUCIR = "Producido ";
     private final String MSG_VENDER = "Vendido ";
 
     public void producir() throws InterruptedException {
