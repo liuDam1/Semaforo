@@ -10,7 +10,7 @@ public class Productor implements Runnable  {
     @Override
     public void run() {
           try {
-            while (!venta.obrasFinalizado()) {
+            while (!venta.finalizado()) {
                 Thread.sleep(500);
                 venta.producir();
             }
